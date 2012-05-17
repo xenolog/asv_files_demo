@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="/static/css/style.css" media="all" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    {% block add_to_head %}{% endblock %}
+</head>
+<body{%if BODYCLASS %} class="{{BODYCLASS}}"{% endif %}>
+    <div id="wp">
+        {% block wp %}{% endblock %}
+    </div>
+</body>
+</html>
+

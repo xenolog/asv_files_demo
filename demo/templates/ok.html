@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block add_to_head %}
+    {{FORM.media}}
+{% endblock %}
+
+{% block wp %}
+    <p>Form and files saved succefully...</p>
+    <p><a href="{% url demo:form1 %}">continue...</a></p>
+{% endblock %}
