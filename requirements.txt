@@ -1,0 +1,4 @@
+django>=1.4
+asv_media>=dev-20121101-01
+asv_utils>=dev-20121101-01
+asv_files>=dev-20121101-01
