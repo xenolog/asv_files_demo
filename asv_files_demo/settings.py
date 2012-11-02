@@ -1,7 +1,7 @@
 # Django settings for asv_files_demo project.
 
 import os
-PRJ_ROOT = '{}/'.format(os.path.abspath(os.path.dirname(__package__)))
+PRJ_ROOT = '{0}/'.format(os.path.abspath(os.path.dirname(__package__)))
 FILE_CHARSET = 'utf-8'
 
 DEBUG = True
@@ -16,7 +16,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3'
-        'NAME': '{}var/database.sqlite'.format(PRJ_ROOT), # Or path to database file if using sqlite3.
+        'NAME': '{0}var/database.sqlite'.format(PRJ_ROOT), # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -52,7 +52,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = '{}var/media/'.format(PRJ_ROOT)
+MEDIA_ROOT = '{0}var/media/'.format(PRJ_ROOT)
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -63,7 +63,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = '{}var/htdocs/'.format(PRJ_ROOT)
+STATIC_ROOT = '{0}var/htdocs/'.format(PRJ_ROOT)
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -141,7 +141,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'asv_media',
     #'asv_utils',
-    'asv_files',
+    'asv_files.dj',
     'demo',
 )
 

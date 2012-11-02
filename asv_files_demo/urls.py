@@ -10,7 +10,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url('filerpc/', include('asv_files.urls', namespace='asv_files')),
+    url('filerpc/', include('asv_files.dj.urls', namespace='asv_files')),
 )
 urlpatterns += staticfiles_urlpatterns()
 if settings.DEBUG:

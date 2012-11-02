@@ -6,7 +6,7 @@
 
 {% block wp %}
     <hr>
-    <form method="POST" action="{% url demo:form1 %}">{% csrf_token %}
+    <form method="POST" action="{% url 'demo:form1' %}">{% csrf_token %}
         <table>{{ form.as_table }}</table>
         <BR><BR>
         <input type="submit"> <input type="reset">

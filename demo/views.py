@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 from django.views.generic.edit import FormView
 from django.views.generic.base import TemplateView
 from django import forms
-from asv_files.fields import *
+from asv_files.dj.fields import *
 from asv_utils.dj import reverse_lazy
 from demo.models import Zakaz
 
